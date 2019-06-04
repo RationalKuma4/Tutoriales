@@ -518,4 +518,3 @@ C:\Users\Anselmo-PC\Documents\GitHub\Tutoriales\Mile\FirstXamarin\App4\App4.Andr
 C:\Users\Anselmo-PC\Documents\GitHub\Tutoriales\Mile\FirstXamarin\App4\App4.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Anselmo-PC\Documents\GitHub\Tutoriales\Mile\FirstXamarin\App4\App4.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Anselmo-PC\Documents\GitHub\Tutoriales\Mile\FirstXamarin\App4\App4.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Anselmo-PC\Documents\GitHub\Tutoriales\Mile\FirstXamarin\App4\App4.Android\obj\Debug\90\android\assets\System.Runtime.dll
