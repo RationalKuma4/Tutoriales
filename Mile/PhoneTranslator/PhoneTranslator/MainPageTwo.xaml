@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PhoneTranslator.MainPageTwo"
+             xmlns:local="clr-namespace:PhoneTranslator">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">0,20,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Enter a phoneword:"
+                   FontSize="Large"/>
+            <Entry x:Name="PhoneNumberText"
+                   Text="1-855-XAMARIN"/>
+            <Button x:Name="TranslateButton"
+                    Text="Translate"
+                    Clicked="OnTranslate"
+                    TextColor="{x:Static local:SharedResources.ButtonTextColor}"
+                    BackgroundColor="{x:Static local:SharedResources.ButtonBkColor}"/>
+            <Button x:Name="CallButton"
+                    Text="Call"
+                    IsEnabled="False"
+                    Clicked="OnCall"
+                    TextColor="{x:Static local:SharedResources.ButtonTextColor}"
+                    BackgroundColor="{x:Static local:SharedResources.ButtonBkColor}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
