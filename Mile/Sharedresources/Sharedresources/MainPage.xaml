@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Sharedresources.MainPage">
+
+    <StackLayout>
+        <Label 
+               Text="Hola mundo"/>
+    </StackLayout>
+
+</ContentPage>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MyApp.TabbedPage1">
+    <ContentPage Title="Browse">
+        <ContentPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS">tab_feed.png</On>
+                <On Platform="Android" />
+                <On Platform="UWP" />
+            </OnPlatform>
+        </ContentPage.Icon>
+    </ContentPage>
+    <ContentPage Title="About">
+        <ContentPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS">tab_about.png</On>
+                <On Platform="Android" />
+                <On Platform="UWP" />
+            </OnPlatform>
+        </ContentPage.Icon>
+    </ContentPage>
+</TabbedPage>-->
