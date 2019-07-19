@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlLiteTest.Android", "SqlLiteTest.Android\SqlLiteTest.Android.csproj", "{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlLiteTest", "SqlLiteTest\SqlLiteTest.csproj", "{4AC633B1-E362-42A0-89DD-8B078FFCD46E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC0C379-177B-4517-BEEF-FF051DCB5AF5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4AC633B1-E362-42A0-89DD-8B078FFCD46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC633B1-E362-42A0-89DD-8B078FFCD46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC633B1-E362-42A0-89DD-8B078FFCD46E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4AC633B1-E362-42A0-89DD-8B078FFCD46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC633B1-E362-42A0-89DD-8B078FFCD46E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC633B1-E362-42A0-89DD-8B078FFCD46E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0AE75C2-B7B5-4FEA-B73C-F714F2FE1BD9}
+	EndGlobalSection
+EndGlobal
