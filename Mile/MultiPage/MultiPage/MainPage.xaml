@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MultiPage.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="Gray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="10" Spacing="5">
+        <Label Text="Explore your solar system!" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" />
+        <Label Text="🌎 🌕 ☀️" FontSize="Large" HorizontalOptions="Center" />
+
+        <Button x:Name="BtnSunrise" Text="Sunrise and sunset"/>
+        <Button x:Name="BtnMoonPhase" Text="Moon pahse"/>
+        <Button x:Name="BtnSpaceInfo" Text="Astronomical bodies"/>
+        <Button x:Name="BtnAbout" Text="About Contoso astronomy"/>
+    </StackLayout>
+
+</ContentPage>-->
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            x:Class="MultiPage.MainPage">
+</TabbedPage>
