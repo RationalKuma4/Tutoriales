@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Facs.Views.QuoteDetailPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" Icon="ic_edit.png" Text="Edit" Priority="0" Clicked="Handle_ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid Padding="5,10,5,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="120" />
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Text="{Binding Author}" 
+                   VerticalOptions="Start" 
+                   HorizontalTextAlignment="Center"
+                   Style="{DynamicResource TitleStyle}"/>
+            <Label Grid.Row="1" Text="{Binding QuoteText}" 
+                   VerticalOptions="Start"
+                   Style="{DynamicResource BodyStyle}"/>
+            <Button Grid.Row="2" Text="Close" 
+                    BackgroundColor="Green" 
+                    TextColor="White" 
+                    VerticalOptions="EndAndExpand"
+                    Clicked="Handle_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
