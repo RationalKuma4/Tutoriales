@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "datatables.net-bs": "2.1.1"
+  }
+}

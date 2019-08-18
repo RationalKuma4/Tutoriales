@@ -1,0 +1,27 @@
+﻿@page "{restaurantId:int}"
+@model CoreOne.Pages.Restaurants.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+@if (Model.Message != null)
+{
+    <div class="alert alert-info">
+        @Model.Message
+    </div>
+}
+<h2>@Model.Restaunrant.Name</h2>
+
+<div>
+    Id: @Model.Restaunrant.Id
+</div>
+
+<div>
+    Location: @Model.Restaunrant.Location
+</div>
+
+<div>
+    Cuisine: @Model.Restaunrant.Cuisine
+</div>
+
+<a asp-page="./List" class="btn btn-default">All restaurants</a>

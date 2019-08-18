@@ -1,0 +1,45 @@
+﻿@page
+@model CoreOne.R2.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Restaunrant</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Restaunrant.Id" />
+            <div class="form-group">
+                <label asp-for="Restaunrant.Name" class="control-label"></label>
+                <input asp-for="Restaunrant.Name" class="form-control" />
+                <span asp-validation-for="Restaunrant.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Restaunrant.Location" class="control-label"></label>
+                <input asp-for="Restaunrant.Location" class="form-control" />
+                <span asp-validation-for="Restaunrant.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Restaunrant.Cuisine" class="control-label"></label>
+                <select asp-for="Restaunrant.Cuisine" class="form-control"></select>
+                <span asp-validation-for="Restaunrant.Cuisine" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,16 @@
+﻿@page "{restaurantId:int}"
+@model CoreOne.Pages.Restaurants.DeleteModel
+@{
+}
+
+<!DOCTYPE html>
+
+
+    <h2>Delet!</h2>
+    <div class="alert alert-danger">
+        Are you sure ypu want to delete @Model.Restaunrant.Name?
+    </div>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes!</button>
+        <a asp-page="List" class="btn btn-default">Cancel!</a>
+    </form>
