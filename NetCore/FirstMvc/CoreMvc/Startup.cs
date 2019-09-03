@@ -36,7 +36,12 @@ namespace CoreMvc
             app.UseStatusCodePages();
             app.UseStaticFiles();
 
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "Deafult",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
