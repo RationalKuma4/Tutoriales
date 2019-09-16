@@ -25,6 +25,7 @@ namespace CoreMvc
 
             //services.AddTransient<IPieRepository, MockPieRepository>();
             services.AddTransient<IPieRepository, PieRepository>();
+            services.AddTransient<IFeedbackRepository, FeedbackRepository>();
 
             services.AddMvc();
         }
