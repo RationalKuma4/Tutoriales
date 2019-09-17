@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoreMvc.Models
 {
-    public class AppDbConetxt : DbContext
+    public class AppDbConetxt : IdentityDbContext<IdentityUser>
     {
         public AppDbConetxt(DbContextOptions<AppDbConetxt> options)
             : base(options)

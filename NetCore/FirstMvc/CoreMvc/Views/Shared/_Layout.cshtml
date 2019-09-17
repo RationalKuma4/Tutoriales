@@ -18,6 +18,8 @@
                     <li>
                         <a asp-controller="Feedback" asp-action="Index" class="navbar-brand">Feedback</a>
                     </li>
+                    <partial name="_LoginPartial" />
+
                 </ul>
             </div>
         </div>
@@ -27,6 +29,7 @@
             @RenderBody()
         </div>
     </div>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
 
