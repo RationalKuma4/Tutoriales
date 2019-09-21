@@ -1,16 +1,24 @@
 ﻿using CoreCodeCamp.Data.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CoreCodeCamp.Models
 {
     public class CampModel
     {
         //public int Id { get; set; }
+        [Required]
+        [StringLength(100)]
         public string Name { get; set; }
+
+        [Required]
         public string Moniker { get; set; }
+
         //public Location Location { get; set; }
         public DateTime EventDate { get; set; } = DateTime.MinValue;
+
+        [Range(1, 100)]
         public int Lenght { get; set; } = 1;
         //public ICollection<Talk> Talks { get; set; }
 
