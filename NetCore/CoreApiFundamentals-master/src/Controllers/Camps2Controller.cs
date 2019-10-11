@@ -12,16 +12,15 @@ using System.Threading.Tasks;
 namespace CoreCodeCamp.Controllers
 {
     [Route("api/[controller]")]
-    [ApiVersion("1.0")]
-    [ApiVersion("1.1")]
+    [ApiVersion("2.0")]
     [ApiController]
-    public class CampsController : ControllerBase
+    public class Camps2Controller : ControllerBase
     {
         private readonly ICampRepository _campRepository;
         private readonly IMapper _mapper;
         private readonly LinkGenerator _linkGenerator;
 
-        public CampsController(ICampRepository campRepository, IMapper mapper, LinkGenerator linkGenerator)
+        public Camps2Controller(ICampRepository campRepository, IMapper mapper, LinkGenerator linkGenerator)
         {
             _campRepository = campRepository;
             _mapper = mapper;
@@ -43,8 +42,7 @@ namespace CoreCodeCamp.Controllers
         }
 
         [HttpGet("{moniker:string}")]
-        [MapToApiVersion("1.1")]
-        public ActionResult<CampModel> Get11(string moniker)
+        public ActionResult<CampModel> Get(string moniker)
         {
             try
             {
@@ -154,25 +152,6 @@ namespace CoreCodeCamp.Controllers
             }
 
             return BadRequest("Failed to delete the camp");
-        }
-
-
-
-        [HttpGet("{moniker:string}")]
-        [MapToApiVersion("1.0")]
-        public ActionResult<CampModel> Get(string moniker)
-        {
-            try
-            {
-                var result = _campRepository.GetSpeakersByMonikerAsync(moniker);
-                if (result == null) return NotFound();
-
-                return _mapper.Map<CampModel>(result);
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Database errror");
-            }
         }
     }
 }
