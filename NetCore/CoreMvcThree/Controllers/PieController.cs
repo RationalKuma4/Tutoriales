@@ -1,4 +1,5 @@
 ﻿using CoreMvcThree.Model;
+using CoreMvcThree.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreMvcThree.Controllers
@@ -14,9 +15,12 @@ namespace CoreMvcThree.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public IActionResult Index()
+        public ViewResult List()
         {
-            return View();
+            var piesViewModel = new PieListViewModel();
+            piesViewModel.Pies = _pieRepository.AllPies;
+            piesViewModel.CurrentCategory = "Cheese";
+            return View(piesViewModel);
         }
     }
 }
